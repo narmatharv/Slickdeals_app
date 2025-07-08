@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Slick Deals</title>
+</head>
+<body>
+    <h1>Slick Deals</h1>
+    <table>
+        <tr th:each="deal : ${deals}">
+            <td th:text="${deal.name}">Deal Name</td>
+            <td th:text="${deal.description}">Deal Description</td>
+            <td th:text="${deal.price}">Deal Price</td>
+        </tr>
+    </table>
+</body>
+</html>
